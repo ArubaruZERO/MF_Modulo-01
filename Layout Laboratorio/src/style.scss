@@ -1,0 +1,334 @@
+$color1: blue;
+$color2:red;
+$color3:green;
+body{
+    margin :0px;
+}
+.container-1{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(1, 100px);
+    grid-gap:15px;
+    text-align: center;
+   margin-bottom: 5px;
+}
+.color-box-text{
+    color: white;
+}
+.box.darken-4{
+   background-color:darken($color1, 40%);
+   border-radius: 5px;
+  
+ }
+.box.darken-3{
+    background-color:darken($color1, 30%);
+    border-radius: 5px;
+ }
+ .box.darken-2{
+    background-color:darken($color1, 20%);
+    border-radius: 5px;
+ }
+ .box.darken-1{
+    background-color:darken($color1, 10%);
+    border-radius: 5px;
+ }
+
+
+.box.base-color{
+   background-color: $color1;
+   grid-gap:15px;
+}
+
+
+ .box.lighten-1{
+    background-color:lighten($color1, 40%);
+    border-radius: 5px;
+ }
+ .box.lighten-2{
+    background-color:lighten($color1, 30%);
+    border-radius: 5px;
+ }
+ .box.lighten-3{
+    background-color:lighten($color1, 20%);
+    border-radius: 5px;
+ }
+ .box.lighten-4{
+    background-color:lighten($color1, 10%);
+    border-radius: 5px;
+ }
+
+
+
+ .container-2{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(1, 100px);
+    grid-gap:15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.second.box.darken-4{
+    background-color:darken($color2, 40%);
+    border-radius: 5px;
+  }
+ .second.box.darken-3{
+     background-color:darken($color2, 30%);
+     border-radius: 5px;
+  }
+  .second.box.darken-2{
+     background-color:darken($color2, 20%);
+     border-radius: 5px;
+  }
+  .second.box.darken-1{
+     background-color:darken($color2, 10%);
+     border-radius: 5px;
+  }
+ 
+ 
+ .second.box.base-color{
+    background-color: $color2;
+    
+}
+
+ 
+ 
+ 
+ .second.box.lighten-1{
+     background-color:lighten($color2, 40%);
+     border-radius: 5px;
+  }
+  .second.box.lighten-2{
+     background-color:lighten($color2, 30%);
+     border-radius: 5px;
+  }
+  .second.box.lighten-3{
+     background-color:lighten($color2, 20%);
+     border-radius: 5px;
+  }
+  .second.box.lighten-4{
+     background-color:lighten($color2, 10%);
+     border-radius: 5px;
+  }
+ 
+  .container-3{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(1, 100px);
+    grid-gap:15px;
+    text-align: center;
+}
+
+
+.third.box.darken-4{
+    background-color:darken($color3, 40%);
+    border-radius: 5px;
+  }
+ .third.box.darken-3{
+     background-color:darken($color3, 30%);
+     border-radius: 5px;
+  }
+  .third.box.darken-2{
+     background-color:darken($color3, 20%);
+     border-radius: 5px;
+  }
+  .third.box.darken-1{
+     background-color:darken($color3, 10%);
+     border-radius: 5px;
+  }
+ 
+ 
+ .third.box.base-color{
+    background-color: $color3;
+}
+
+ 
+ 
+ 
+ .third.box.lighten-1{
+     background-color:lighten($color3, 40%);
+     border-radius: 5px;
+  }
+  .third.box.lighten-2{
+     background-color:lighten($color3, 30%);
+     border-radius: 5px;
+  }
+  .third.box.lighten-3{
+     background-color:lighten($color3, 20%);
+     border-radius: 5px;
+  }
+  .third.box.lighten-4{
+     background-color:lighten($color3, 10%);
+     border-radius: 5px;
+  }
+ 
+
+
+
+.separador{
+    font-size: xx-large;
+    margin: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.temas{
+    padding-left: 15px;
+   display: grid;
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: repeat(12,100px);        
+   .base{
+    background-color: $color2;
+   }
+   .important{
+       background-color: darken($color: $color2, $amount: 20);
+   }
+   .warning{
+       background-color: lighten($color: $color2, $amount: 20);
+   }
+   .principal-font{
+       font-family: Arial, Helvetica;
+       padding-top: 40px; 
+
+
+   }
+   .secondary-font{
+      
+       font-size: small;
+       font-family: 'Courier New', Courier, monospace;
+   }
+   .box1{
+       
+        border: 1px solid black;
+        box-shadow: -15px 13px 5px 0px rgba(0,0,0,0.11);
+        margin-bottom: 15px;
+   }
+
+   .base2{
+    background-color: $color1;
+   }
+   .important2{
+       background-color: darken($color: $color1, $amount: 20);
+   }
+   .warning2{
+       background-color: lighten($color: $color1, $amount: 20);
+   }
+   .principal-font2{
+       font-family: Arial, Helvetica;
+       padding-top: 40px; 
+
+
+   }
+   .secondary-font2{
+      
+       font-size: small;
+       font-family: 'Courier New', Courier, monospace;
+   }
+   .box2{
+       
+        border: 1px solid black;
+        box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.11);
+   }
+
+}
+
+
+
+
+
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #3b5998;
+    border-bottom: 1px solid #29487d;
+    height: 45px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+.menu-main a.active{
+    background-color: #29487d;
+}
+
+@media (max-width: 768px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #29487d;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.card{
+    width:350px;
+    box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.11);
+    margin-bottom: 150px;
+    border: #c7c7c7 solid 1px;
+    
+}
+img{
+    width: 100%;
+}
+
+.description{
+    padding: 0px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.date{
+   text-align: right;
+    padding-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-more-info{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+.date-text{
+    color: #3eba1f;
+}
+.button{
+    background-color: #46d900;
+    color: white;
+    padding: 15px;
+    width: 450px;
+    text-align: center;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 2px;
+}
+.button:hover{
+    background-color: #3eba1f;
+}
